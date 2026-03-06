@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Henry Shop</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+
+/* TOP BAR */
+
+.topbar{
+background:#ffcc00;
+padding:10px;
+display:flex;
+justify-content:flex-end;
+gap:20px;
+font-weight:bold;
+}
+
+/* COVER */
+
+.cover{
+height:300px;
+background:url("https://images.unsplash.com/photo-1505740420928-5e560c06d30e") center/cover;
+position:relative;
+}
+
+.avatar{
+width:160px;
+height:160px;
+border-radius:50%;
+border:6px solid white;
+position:absolute;
+bottom:-80px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* SOCIAL LEFT */
+
+.social{
+position:fixed;
+top:200px;
+left:0;
+display:flex;
+flex-direction:column;
+}
+
+.social a{
+padding:15px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.fb{background:#1877f2;}
+.yt{background:#ff0000;}
+.tt{background:black;}
+.ig{background:#e1306c;}
+
+/* PRODUCTS */
+
+.products{
+margin-top:120px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:red;
+font-size:20px;
+}
+
+.old{
+text-decoration:line-through;
+color:gray;
+font-size:14px;
+}
+
+/* CHAT */
+
+.chat{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.chat a{
+background:#25D366;
+color:white;
+padding:12px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.webchat{
+background:#0084ff;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+padding:40px;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+🔍 Tìm kiếm | 🛒 Giỏ hàng | 🔔 Thông báo | 👤 Đăng nhập
+</div>
+
+<div class="cover">
+<img class="avatar" src="https://i.imgur.com/2DhmtJ4.png">
+</div>
+
+<div class="social">
+<a class="fb" href="https://facebook.com" target="_blank">Facebook</a>
+<a class="yt" href="https://youtube.com" target="_blank">YouTube</a>
+<a class="tt" href="https://tiktok.com" target="_blank">TikTok</a>
+<a class="ig" href="https://instagram.com" target="_blank">Instagram</a>
+</div>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<h3>Iphone 15</h3>
+<div class="price">19.990.000₫</div>
+<div class="old">22.990.000₫</div>
+⭐ 4.8 | Đã bán 320
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+<h3>Tai nghe Bluetooth</h3>
+<div class="price">690.000₫</div>
+<div class="old">990.000₫</div>
+⭐ 4.7 | Đã bán 150
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
+<h3>Loa Bluetooth</h3>
+<div class="price">1.200.000₫</div>
+<div class="old">1.500.000₫</div>
+⭐ 4.9 | Đã bán 210
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<h3>Laptop Gaming</h3>
+<div class="price">24.500.000₫</div>
+<div class="old">27.000.000₫</div>
+⭐ 4.8 | Đã bán 98
+</div>
+
+</div>
+
+<div class="chat">
+<a href="https://zalo.me" target="_blank">Chat Zalo</a>
+<a class="webchat" href="#">Chat Web</a>
+</div>
+
+<footer>
+
+<h3>Henry Shop</h3>
+
+📍 Địa chỉ: Hà Nội, Việt Nam  
+☎ Tổng đài: 1900 0000  
+📧 Gmail: henryshop@gmail.com  
+
+<br><br>
+
+<h4>Đối tác & nhà tài trợ</h4>
+Apple | Samsung | Sony | Xiaomi
+
+</footer>
+
+</body>
+</html>
